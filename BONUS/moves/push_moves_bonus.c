@@ -6,11 +6,11 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 21:39:41 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:40:11 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 12:26:17 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../checker.h"
 
 void	push(t_stack **source, t_stack **dest)
 {

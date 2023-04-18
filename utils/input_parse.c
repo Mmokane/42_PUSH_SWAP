@@ -6,7 +6,7 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 14:49:19 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:25:10 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 14:11:28 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,14 +85,14 @@ void	check_digit(char	**str)
 	}
 }
 
-char	*parse(char **av)
+char	*parse2(char **av)
 {
 	int		i;
 	int		j;
 	char	*numbers;
 
 	i = 1;
-	numbers = "";
+	numbers = ft_strdup("");
 	while (av[i])
 	{
 		j = 0;
@@ -100,8 +100,7 @@ char	*parse(char **av)
 			j++;
 		if (!av[i][j])
 			ft_putstr("Error : parse function\n", 2);
-		numbers = ft_strjoin(numbers, av[i]);
-		numbers = ft_strjoin(numbers, " ");
+		numbers = strjoinv2(numbers, av[i], " ");
 		i++;
 	}
 	return (numbers);

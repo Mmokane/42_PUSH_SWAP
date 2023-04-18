@@ -6,7 +6,7 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/24 14:22:46 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/16 16:10:24 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 14:11:14 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,6 @@ void	swap(t_stack *stack);
 void	sa(t_stack **stack_a);
 void	sb(t_stack **stack_b);
 void	ss(t_stack **stack_a, t_stack **stack_b);
-void	free_str(char **str);
-void	ft_error(char *message);
 int		ft_lstsize(t_stack *stack_a);
 void	ft_lstadd_back(t_stack **list, t_stack *new_element);
 t_stack	*ft_lstnew(int input);
@@ -70,11 +68,13 @@ void	is_dup(t_stack *stack_a);
 int		is_it_sorted(t_stack *stack);
 void	fill_stack_a(t_stack **stack_a, char **sep);
 void	push_swap(t_stack **stack_a, t_stack **stack_b);
-char	*parse(char **av);
+char	*parse2(char **av);
 int		*in_array(t_stack *stack_a);
 long	ft_atoi(const char *str);
 size_t	ft_strlen(const char *str);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+char	*ft_strdup(char *s);
+char	*strjoinv2(char *s1, char *s2, char *s3);
 
 #endif

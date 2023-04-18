@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   strjoinv2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/16 14:52:05 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/18 12:00:09 by mmokane          ###   ########.fr       */
+/*   Created: 2023/04/18 14:04:20 by mmokane           #+#    #+#             */
+/*   Updated: 2023/04/18 14:11:06 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*strjoinv2(char *s1, char *s2, char *s3)
 {
+	int		i;
+	int		j;
+	int		k;
 	char	*str;
-	int		s1_len;
-	int		s2_len;
 
 	if (!s1 || !s2)
 		return (0);
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	str = malloc(sizeof(char) * (s1_len + s2_len + 1));
+	str = malloc(ft_strlen(s1) + ft_strlen(s2) + ft_strlen(s3) + 1);
 	if (!str)
 		return (0);
-	ft_memmove(str, s1, s1_len);
-	ft_memmove(str + s1_len, s2, s2_len + 1);
+	i = -1;
+	while (s1[++i])
+		str[i] = s1[i];
+	j = -1;
+	while (s2[++j])
+		str[i++] = s2[j];
+	k = -1;
+	while (s3[++k])
+		str[i++] = s3[k];
+	str[i] = '\0';
+	free(s1);
 	return (str);
 }

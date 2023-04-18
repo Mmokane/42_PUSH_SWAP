@@ -6,11 +6,11 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 14:54:56 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/18 12:00:14 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 12:43:11 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/push_swap.h"
+#include "../checker.h"
 
 static int	count_words(char const *str, char sep)
 {

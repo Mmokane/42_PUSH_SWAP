@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/17 21:49:42 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:49:55 by mmokane          ###   ########.fr       */
+/*   Created: 2023/04/18 12:11:25 by mmokane           #+#    #+#             */
+/*   Updated: 2023/04/18 12:12:44 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../checker.h"
 
-void	ft_putstr(char *str, int fd)
+int	ft_strcmp(char *s1, char *s2)
 {
-	while (*str)
-		write(fd, str++, 1);
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }

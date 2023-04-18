@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   linked_bonus.c                                     :+:      :+:    :+:   */
+/*   linked.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/17 21:46:57 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:47:17 by mmokane          ###   ########.fr       */
+/*   Created: 2023/04/12 14:59:49 by mmokane           #+#    #+#             */
+/*   Updated: 2023/04/18 12:50:23 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../checker.h"
 
+// calcullate nodes
 int	ft_lstsize(t_stack *stack_a)
 {
 	int	i;
@@ -25,6 +26,8 @@ int	ft_lstsize(t_stack *stack_a)
 	return (i);
 }
 
+// add the element pointed to by 'new_element' to 
+//the end of the list pointed to by 'list'.
 void	ft_lstadd_back(t_stack **list, t_stack *new_element)
 {
 	t_stack	*content;
@@ -40,6 +43,7 @@ void	ft_lstadd_back(t_stack **list, t_stack *new_element)
 	}
 }
 
+// crete a node to build the stack
 t_stack	*ft_lstnew(int input)
 {
 	t_stack	*head;
@@ -52,6 +56,7 @@ t_stack	*ft_lstnew(int input)
 	return (head);
 }
 
+// get the smallest number in the stack
 int	get_smallest_nb(t_stack *stack)
 {
 	int	x;
@@ -66,6 +71,7 @@ int	get_smallest_nb(t_stack *stack)
 	return (x);
 }
 
+// get the number position (node)
 int	number_index(t_stack *stack_a, int x)
 {
 	int	i;

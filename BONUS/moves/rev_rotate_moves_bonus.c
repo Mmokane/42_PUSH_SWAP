@@ -6,11 +6,11 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 21:40:36 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:40:57 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 12:26:20 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../checker.h"
 
 void	rev_rotate(t_stack **stack)
 {

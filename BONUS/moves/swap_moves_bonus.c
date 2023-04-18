@@ -6,11 +6,11 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 21:41:24 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:41:38 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 12:26:27 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../checker.h"
 
 void	swap(t_stack *stack)
 {

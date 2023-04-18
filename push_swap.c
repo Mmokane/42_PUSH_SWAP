@@ -6,7 +6,7 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 14:35:16 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/16 16:10:06 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 13:59:43 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	main(int ac, char **av)
 	stack_b = NULL;
 	if (ac > 2)
 	{
-		nums = parse(av);
+		nums = parse2(av);
 		splited = ft_split(nums, ' ');
 		free(nums);
 		check_digit(splited);

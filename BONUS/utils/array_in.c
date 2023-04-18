@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   moves_utils_bonus.c                                :+:      :+:    :+:   */
+/*   array_in.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/17 21:42:03 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/18 12:26:14 by mmokane          ###   ########.fr       */
+/*   Created: 2023/04/18 12:52:59 by mmokane           #+#    #+#             */
+/*   Updated: 2023/04/18 12:53:12 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../checker.h"
 
-t_stack	*stack_bottom(t_stack *stack)
+int	*array_in(t_stack *stack_a)
 {
-	while (stack && stack->next != NULL)
-		stack = stack->next;
-	return (stack);
-}
+	int	i;
+	int	*arr;
 
-t_stack	*second_to_last(t_stack *stack)
-{
-	while (stack && stack->next && stack->next->next != NULL)
-		stack = stack->next;
-	return (stack);
+	i = 0;
+	arr = malloc(4 * ft_lstsize(stack_a));
+	while (stack_a)
+	{
+		arr[i] = stack_a->value;
+		stack_a = stack_a->next;
+		i++;
+	}
+	return (arr);
 }

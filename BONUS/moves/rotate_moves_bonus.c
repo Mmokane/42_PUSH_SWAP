@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rotate_move_bonus.c                                :+:      :+:    :+:   */
+/*   rotate_moves_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 21:35:51 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/17 21:39:18 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/18 12:26:24 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "../checker.h"
 
 //rotating the stack by moving the first element to the end of the stack.
 void	rotate(t_stack **stack)
@@ -45,4 +45,3 @@ void	rr(t_stack **stack_a, t_stack **stack_b)
 	rotate(stack_a);
 	rotate(stack_b);
 }
-

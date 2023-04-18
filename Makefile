@@ -6,11 +6,13 @@
 #    By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/24 14:08:53 by mmokane           #+#    #+#              #
-#    Updated: 2023/04/16 15:17:04 by mmokane          ###   ########.fr        #
+#    Updated: 2023/04/17 21:33:47 by mmokane          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
+
+NAME_BONUS = checker
 
 CC = cc
  

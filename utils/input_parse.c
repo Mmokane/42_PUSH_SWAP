@@ -6,7 +6,7 @@
 /*   By: mmokane <mmokane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 14:49:19 by mmokane           #+#    #+#             */
-/*   Updated: 2023/04/16 15:35:21 by mmokane          ###   ########.fr       */
+/*   Updated: 2023/04/17 21:25:10 by mmokane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	digit_error(void)
 {
-	ft_putstr("Error : digit function\n", 2);
+	ft_putstr("Error : in digit\n", 2);
 	exit(1);
 }
 
@@ -50,7 +50,10 @@ void	is_dup(t_stack *stack_a)
 		while (j < size)
 		{
 			if (arr[i] == arr[j])
-				ft_putstr("Error : dup function", 2);
+			{
+				ft_putstr("Error : duplicates", 2);
+				exit (1);
+			}
 			j++;
 		}
 		i++;
